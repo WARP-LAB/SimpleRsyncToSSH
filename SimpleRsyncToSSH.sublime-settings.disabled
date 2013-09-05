@@ -1,0 +1,36 @@
+{
+  "warpsync":
+	[
+		{
+		"connection":
+		[
+			{
+    			"host"        : "mydomain.tld",
+    			"port"        : "22",
+    			"username"    : "babem",
+    			"remotepath"  : "/real/path/to/dir/which/has/to/be/filled/with/contents/of/projects/main/dir",
+    			"remoteuri"   : "http://www.webpage.tld/subdir/if/needed",
+    			"openuri"     : 1
+  			}
+  		],
+  		"opts":
+		[
+			{
+    			"delifnotonlocal" : 1,
+    			"deleteexcluded"  : 1
+  			}
+  		],
+  		"excludes":
+		[
+			"*.sublime-project",
+			"*.sublime-workspace",
+			"*.svn",
+			"*.git",
+			"CVS",
+			".DS_Store",
+			"Thumbs.db",
+			"desktop.ini"
+  		]
+  		}
+	]
+}

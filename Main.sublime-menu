@@ -1,0 +1,26 @@
+[
+  {
+    "caption": "Preferences",
+    "mnemonic": "n",
+    "id": "preferences",
+    "children": [
+      {
+        "caption": "Package Settings",
+        "mnemonic": "P",
+        "id": "package-settings",
+        "children": [
+          {
+            "caption": "SimpleRsyncToSSH",
+            "children": [
+              {
+                "command": "open_file",
+                "args": {"file": "${packages}/SimpleRsyncToSSH/SimpleRsyncToSSH.settings-template"},
+                "caption": "Show Settings Template"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
