@@ -55,7 +55,7 @@ class WarpThreadedSync(threading.Thread):
         remoteUser = str(self.settings["warpsync"][0]["connection"][0]["username"])
         remotePath = str(self.settings["warpsync"][0]["connection"][0]["remotepath"])
 
-        cmd = 'rsync --progress -vv -az -e \'ssh -p ' + remotePort + '\' ' + deleteIfNotLocal + excludeStrComp + deleteExcluded + self.projFolder + '/' + ' ' + remoteUser + '@' + remoteHost + ':' + remotePath
+        cmd = 'rsync --progress -vv -az --update ' + deleteIfNotLocal + excludeStrComp + deleteExcluded + self.projFolder + '/ ' + '-e \'ssh -p ' + remotePort + '\' ' + remoteUser + '@' + remoteHost + ':' + remotePath
         
         print "WARPSYNC | start"
 
